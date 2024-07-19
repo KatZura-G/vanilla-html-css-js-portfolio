@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sitansu Ghosh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sitansu Ghosh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section-pic-container">
+        <img id="profile-pict" src="./assets/profile-pic.png" alt="" />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Sitansu Ghosh</h1>
+        <p class="section-text-p2">Full-Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download Resumé
+          </button>
+          <button class="btn btn-color1" onclick="location.href= './#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Linkedin Profile"
+            class="icon"
+            onclick="location.href = 'https://www.linkedin.com/in/sitansu-ghosh/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Github Profile"
+            class="icon"
+            onclick="location.href = 'https://github.com/KatZura-G'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section-text-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="profile-picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience-icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                Final Year <br />
+                CSE Student
+              </p>
+              <p>3+ Years <br />Community Manager</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education-icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelors of Engineering - Computer Science Engineering (Hons.)
+                Artificial Intelligence and Machine Learning
+              </p>
+              <p>Apex Institure of Technology, Chandigarh University, Punjab</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am an aspiring ML Engineer who combines a love for coding with
+              pop culture and gaming/esports, with experience in creating ML,
+              DL, Computer vision and other models, I find myself relatable to
+              computers due to my algorithmic thinking process and creativity. I
+              approach each and every challenge with efficiency and goals set
+              for the same. Continuously seeking opportunities and challenges to
+              help me increase my proficiency with my skills as well as improve
+              myself as a person.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="scroll-arrow"
+        class="icon arrow"
+        onclick="location.href = './#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Front-End Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Skillful</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Skillful</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Skillful</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-End Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Yet to Learn</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Yet to Learn</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express.js</h3>
+                  <p>Yet to Learn</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill-icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="scroll-arrow"
+        class="icon arrow"
+        onclick="location.href = './#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section-text-p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="project1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/KatZura-G'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/KatZura-G'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="project2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/KatZura-G'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/KatZura-G'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="project3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/KatZura-G'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color2 project-btn"
+                onclick="location.href='https://github.com/KatZura-G'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="scroll-arrow"
+        class="icon arrow"
+        onclick="location.href = './#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section-text-p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="email-icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:sitansu0303@gmail.com"></a>sitansu0303@gmail.com
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin-icon"
+            class="icon linkedin-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/sitansu-ghosh/"></a>Sitansu
+            Ghosh
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="scroll-arrow"
+        class="icon arrow reverse"
+        onclick="location.href = './#'"
+      />
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sitansu Ghosh. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
